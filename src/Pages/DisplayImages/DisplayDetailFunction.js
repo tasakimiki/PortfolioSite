@@ -5,6 +5,7 @@ import images from "./Images/TextData/ImagesTextData.json";
 
 export const display_detail = (location) =>{
     const location_array = location.split("/");
+    {/*aaaa*/}
 
     {/*↓jsonの配列の要素の中で、選択した画像とproject_numが一致するものを探す*/}
     {/*↓imageは、images内の今比べてる要素を示す*/}
