@@ -1,0 +1,65 @@
+.main{
+    width: 94.5%;
+    margin: 0 auto;
+    padding-top: 93px;
+    background: white;
+}
+
+.title{
+    font-size: 29px;
+    letter-spacing: 0.08em;
+}
+
+#title1 span{
+    color:#99B100;
+}
+
+#title2 span{
+    color:#C17F00;
+}
+
+#title3 span{
+    color:#C0AC00;
+}
+
+.sub_title{
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    margin-top: -2em;
+}
+
+.images_container{
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.images_menu{
+    border-bottom: 2.5px solid black;
+}
+
+.images_menu_text{
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    margin-right: 70%;
+    margin-bottom: 0.5em;
+    width: 350px;
+}
+
+.images_menu li {
+    list-style:none;
+}
+
+.images_menu li a{
+    color: #959595;
+    transition: color .3s;
+}
+
+.images_menu li.active a{
+    color: black;
+}
+
+.images {
+    width: 85%;
+    margin: 0 auto;
+}
