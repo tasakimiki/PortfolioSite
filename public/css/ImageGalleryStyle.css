@@ -36,7 +36,8 @@
 .image_details_info{
     display: flex;
     width: 28em;
-    align-items: center;
+    align-items: center; /*縦方向中央ぞろえ*/
+    justify-content: center; /*横方向中央ぞろえ*/
 }
 
 .image_details_info_text{
