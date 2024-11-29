@@ -1,8 +1,9 @@
 .image_gallery, .image_detail{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
+    gap: 2em;
 }
 
 .image_container {
@@ -35,6 +36,7 @@
 
 .image_details_info{
     display: flex;
+    flex: 1;
     width: 28em;
     align-items: center; /*縦方向中央ぞろえ*/
     justify-content: center; /*横方向中央ぞろえ*/
