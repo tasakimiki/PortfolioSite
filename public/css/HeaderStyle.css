@@ -80,12 +80,13 @@ a,a:hover,a:visited{
 }
 
 .triangle{
+    padding-top: 5px;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 16px solid transparent;
-    transition: color .3s;
+    transition: border-color .3s;
 }
 
 .triangle1_active{
