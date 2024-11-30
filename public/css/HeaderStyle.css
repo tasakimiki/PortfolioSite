@@ -87,7 +87,7 @@ a,a:hover,a:visited{
     border-top: 16px solid transparent;
     position: relative;
     margin-top:-16px;
-    bottom: 16px;
+    top: 16px;
 
 }
 
