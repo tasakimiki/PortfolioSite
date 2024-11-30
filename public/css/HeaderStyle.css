@@ -101,9 +101,9 @@ a,a:hover,a:visited{
 
 .triangle{
     margin: 0 auto;
-    width: 5px;
-    height: 5px;
-    border: 3px red;
+    width: 0px;
+    height: 0px;
+    border: 10px red;
     /*
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
