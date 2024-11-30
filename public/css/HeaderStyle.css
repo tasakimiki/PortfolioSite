@@ -85,8 +85,10 @@ a,a:hover,a:visited{
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 16px solid transparent;
-    transition: border-color .15s;
     position: relative;
+    margin-top:-16px;
+    bottom: 16px;
+
 }
 
 .triangle1_active{
