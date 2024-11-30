@@ -77,6 +77,7 @@ a,a:hover,a:visited{
 }
 
 .triangle{
+    place-items: center;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
