@@ -42,9 +42,7 @@ a,a:hover,a:visited{
 }
 
 .header_menu li {
-    display: flex;
     list-style:none;
-    margin-bottom: 20px;
 }
 
 .header_menu li a{
@@ -78,13 +76,14 @@ a,a:hover,a:visited{
     color:#C0AC00;
 }
 
-/*.triangle{
+.triangle{
     position: relative;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 16px blue;
+    border-top: 16px solid transparent;
+    transition: color .3s;
 }
 
 .triangle1_active{
@@ -97,17 +96,4 @@ a,a:hover,a:visited{
 
 .triangle3_active{
     border-top-color:#C0AC00;
-}
-*/
-
-.triangle{
-    margin: 0 auto;
-    width: 0px;
-    height: 0px;
-    border: 10px solid red;
-    /*
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 16px blue;
-    */
 }
