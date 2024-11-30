@@ -42,6 +42,7 @@ a,a:hover,a:visited{
 }
 
 .header_menu li {
+    display: flex;
     list-style:none;
     margin-bottom: 20px;
 }
@@ -103,7 +104,7 @@ a,a:hover,a:visited{
     margin: 0 auto;
     width: 0px;
     height: 0px;
-    border: 10px red;
+    border: 10px solid red;
     /*
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
