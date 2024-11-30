@@ -82,17 +82,17 @@ a,a:hover,a:visited{
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 16px transparent black;
+    border-bottom: 16px transparent black;
 }
 
 .triangle1_active{
-    border-top-color:#99B100;
+    border-bottom-color:#99B100;
 }
 
 .triangle2_active{
-    border-top-color:#C17F00;
+    border-bottom-color:#C17F00;
 }
 
 .triangle3_active{
-    border-top-color:#C0AC00;
+    border-bottom-color:#C0AC00;
 }
