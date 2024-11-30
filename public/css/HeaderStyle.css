@@ -78,21 +78,22 @@ a,a:hover,a:visited{
 }
 
 .triangle{
+    position: relative;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 16px transparent black;
+    border-top: 16px blue;
 }
 
 .triangle1_active{
-    border-bottom-color:#99B100;
+    border-top-color:#99B100;
 }
 
 .triangle2_active{
-    border-bottom-color:#C17F00;
+    border-top-color:#C17F00;
 }
 
 .triangle3_active{
-    border-bottom-color:#C0AC00;
+    border-top-color:#C0AC00;
 }

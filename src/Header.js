@@ -15,15 +15,15 @@ function Header(){
                     <ul className="header_menu flex anton">
                         <li className = {`header_menu1${location.pathname.startsWith("/portfolio")? "_active":""}`}>
                             <Link to={"/portfolio/all"}><span>P</span>ORTFOLIO</Link>
-                            <div className = {`triangle ${location.pathname.startsWith("/portfolio")? "triangle1_active":""}`}></div>
+                            <div className = {`triangle${location.pathname.startsWith("/portfolio")? " triangle1_active":""}`}></div>
                         </li>
                         <li className = {`header_menu2${location.pathname.startsWith("/profile")? "_active":""}`}>
                             <Link to={"/profile"}><span>P</span>ROFILE</Link>
-                            <div className = {`triangle ${location.pathname.startsWith("/profile")? "triangle2_active":""}`}></div>
+                            <div className = {`triangle${location.pathname.startsWith("/profile")? " triangle2_active":""}`}></div>
                         </li>
                         <li className = {`header_menu3${location.pathname.startsWith("/contact")? "_active":""}`}>
                             <Link to={"/contact"}><span>C</span>ONTACT</Link>
-                            <div className = {`triangle ${location.pathname.startsWith("/contact")? "triangle3_active":""}`}></div>
+                            <div className = {`triangle${location.pathname.startsWith("/contact")? " triangle3_active":""}`}></div>
                         </li>
                     </ul>
                 </nav>
