@@ -24,44 +24,75 @@ a,a:hover,a:visited{
     color: inherit;
     text-decoration: none;
 } 
+
 .logo {
     font-size: 41px;
     letter-spacing: 0.08em;
 }
+
 .logo span {
     color: #99B100;
 }
+
 .header_menu{
     margin-right: 30px;
     font-size: 16px;
     letter-spacing: 0.08em;
     width: 380px;
 }
+
 .header_menu li {
     list-style:none;
     /*margin-left: 79px;*/
 }
+
 .header_menu li a{
     transition: color .3s;
 }
+
 .header_menu1:hover {
     color:#99B100;
     transition: .3s;
 }
+
 .header_menu1 span, .header_menu1_active {
     color:#99B100;
 }
+
 .header_menu2:hover {
     color:#C17F00;
     transition: .3s;
 }
+
 .header_menu2 span, .header_menu2_active {
     color:#C17F00;
 }
+
 .header_menu3:hover {
     color:#C0AC00;
     transition: .3s;
 }
+
 .header_menu3 span, .header_menu3_active {
     color:#C0AC00;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 16px transparent transparent;
+}
+
+.triangle1_active{
+    border-top-color:#99B100;
+}
+
+.triangle2_active{
+    border-top-color:#C17F00;
+}
+
+.triangle3_active{
+    border-top-color:#C0AC00;
 }
