@@ -82,7 +82,7 @@ a,a:hover,a:visited{
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 16px transparent transparent;
+    border-top: 16px transparent black;
 }
 
 .triangle1_active{
