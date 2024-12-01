@@ -38,15 +38,18 @@
     display: flex;
     flex: 1;
     width: 28em;
-    align-items: center; /*縦方向中央ぞろえ*/
+    /*align-items: center; /*縦方向中央ぞろえ*/
     justify-content: center; /*横方向中央ぞろえ*/
+    margin-bottom: 3em;
 }
 
 .image_details_info_text{
     padding: 0em 1.3em 0em 1.3em;
-    border: 2.0px solid black;
-    border-radius:5px;
+    border-right: 2.0px solid black;
+    border-left: 2.0px solid black;
     width: 100%;
+    /*border-radius:5px;*/
+
 }
 
 .image_details_info h1{
