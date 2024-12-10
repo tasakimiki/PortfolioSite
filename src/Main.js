@@ -10,7 +10,8 @@ class Main extends React.Component{
         
         return(
                 <Routes>
-                    <Route path={["/", "/home"]} element={<HomePage />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/portfolio/*" element={<PortfolioPage />} />           
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/contact" element={<ContactPage />} />
