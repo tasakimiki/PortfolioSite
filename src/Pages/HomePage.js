@@ -5,8 +5,10 @@ import images from "./DisplayImages/Images/TextData/ImagesTextData.json";
 
 function HomePage(){
     return(
-        <div className = "image_slider">
-            <h1>これはホーム画面！！！！</h1>
+        <div className = "main">
+            <div className = "image_slider">
+                <h1>これはホーム画面！！！！</h1>
+            </div>
         </div>
     );
 }
