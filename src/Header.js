@@ -7,9 +7,9 @@ function Header(){
     return(
         <div className = 'header'>
             <div className="container flex">
-                <a  href = "#" className="logo bungee-inline">
+                <Link to = "/home" className="logo bungee-inline">
                     <span>Z</span>ASSOUYA
-                </a>
+                </Link>
                 <nav>
                     {/*active判定する関数作った方が見た目すっきりするかも*/}
                     <ul className="header_menu flex anton">

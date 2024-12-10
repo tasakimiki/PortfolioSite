@@ -1,4 +1,5 @@
 import React from 'react';
+import HomePage from './Pages/HomePage';
 import PortfolioPage from './Pages/PortfolioPage';
 import ProfilePage from './Pages/ProfilePage';
 import ContactPage from './Pages/ContactPage';
@@ -9,7 +10,7 @@ class Main extends React.Component{
         
         return(
                 <Routes>
-                    <Route path="/" element={<PortfolioPage />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/portfolio/*" element={<PortfolioPage />} />           
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/contact" element={<ContactPage />} />
