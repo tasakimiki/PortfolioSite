@@ -1,8 +1,8 @@
 .header{
     padding: 12px 0;
     border-bottom: 2.5px solid black;
-    position: fixed;
-    z-index: 10;
+    position: fixed; /*要素を固定する(スクロールしても動きません)*/
+    z-index: 10; /*要素を浮かせます(z軸だから奥行みたいな感じ！)*/
     width: 100%;
     background: white;
 }
