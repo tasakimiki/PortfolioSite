@@ -15,12 +15,13 @@
     width: 40%;
     height: 70%; 
     white-space: nowrap; /*要素が親要素の幅を超えた場合でも改行されない*/
-    margin: auto; /*この中の要素を水平方向に中央揃え*/
+    margin: auto; /*この要素を水平方向に中央揃え*/
     background: rgb(255, 0, 119);
 }
 
 .slider_item{
     max-width: 100%;
     max-height: 100%;
+    margin: auto; /*この要素を水平方向に中央揃え*/
     display: inline; /*隣接する要素と横並びに*/
 }
