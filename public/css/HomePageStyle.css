@@ -7,21 +7,33 @@
 /*カルーセル*/
 .image_slider{
     width:100%;
+    height:80%;
     overflow: hidden; /*要素が枠を超えたとき非表示にする*/
     background:gray;
 }
 
 .slider_item_container{
-    width: 40%;
-    height: 70%; 
     white-space: nowrap; /*要素が親要素の幅を超えた場合でも改行されない*/
     margin: auto; /*この要素を水平方向に中央揃え*/
     background: rgb(255, 0, 119);
 }
 
 .slider_item{
-    max-width: 100%;
-    max-height: 100%;
+    width: 40%;
+    height: 70%; 
     margin: auto; /*この要素を水平方向に中央揃え*/
     display: inline; /*隣接する要素と横並びに*/
+    transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
+}
+
+.item_0{
+    transform: translate3d(0, 0, 0);
+}
+
+.item_1{
+    transform: translate3d(-100%, 0, 0);
+}
+
+.item_2{
+    transform: translate3d(-200% , 0, 0);
 }
