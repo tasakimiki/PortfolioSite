@@ -4,9 +4,11 @@
     padding-top: 93px;
 }
 
+/*カルーセル*/
 .image_slider{
     width:100%;
     overflow: hidden; /*要素が枠を超えたとき非表示にする*/
+    background:gray;
 }
 
 .slider_item_container{
@@ -14,6 +16,7 @@
     height: 70%; 
     white-space: nowrap; /*要素が親要素の幅を超えた場合でも改行されない*/
     margin: auto; /*この中の要素を水平方向に中央揃え*/
+    background: rgb(255, 0, 119);
 }
 
 .slider_item{
