@@ -1,0 +1,23 @@
+.home_page{
+    margin: 0 auto;
+    background: white;
+    padding-top: 93px;
+}
+
+.image_slider{
+    width:100%;
+    overflow: hidden; /*要素が枠を超えたとき非表示にする*/
+}
+
+.slider_item_container{
+    width: 40%;
+    height: 70%; 
+    white-space: nowrap; /*要素が親要素の幅を超えた場合でも改行されない*/
+    margin: auto; /*この中の要素を水平方向に中央揃え*/
+}
+
+.slider_item{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline; /*隣接する要素と横並びに*/
+}
