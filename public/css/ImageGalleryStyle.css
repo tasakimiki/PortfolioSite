@@ -1,6 +1,6 @@
 .image_gallery, .image_detail{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*flexコンテナのアイテムが1行に収まらない時折り返す*/
     justify-content: center;
     margin-top: 40px;
     gap: 2em;
