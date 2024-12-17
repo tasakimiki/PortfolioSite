@@ -9,10 +9,10 @@
 
 ## 使用技術
 
--フロントエンド：React, HTML, CSS, JavaScript
--ライブラリ：react-router-dom
--パッケージ管理：npm又はyarn
--その他：JSONファイル(データ管理用)
+- フロントエンド：React, HTML, CSS, JavaScript
+- ライブラリ：react-router-dom
+- パッケージ管理：npm又はyarn
+- その他：JSONファイル(データ管理用)
 
 ## デプロイ
 
