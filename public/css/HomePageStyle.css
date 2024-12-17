@@ -26,22 +26,30 @@
 }
 
 .slider_item{
-    font-size: 50px;
+    font-size: 600px;
     margin: auto; /*この要素を水平方向に中央揃え*/
     display: inline; /*隣接する要素と横並びに*/
     transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
 }
 
-.item_0{
-    transform: translate3d(0, 0, 0);
-}
-
 .item_1{
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-40%, 0, 0);
 }
 
 .item_2{
-    transform: translate3d(-200% , 0, 0);
+    transform: translate3d(-20%, 0, 0);
+}
+
+.item_3{
+    transform: translate3d(-0 , 0, 0);
+}
+
+item_4{
+    transform: translate3d(20% , 0, 0);
+}
+
+item_5{
+    transform: translate3d(40% , 0, 0);
 }
 
 .slide_button {
