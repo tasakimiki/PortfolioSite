@@ -14,12 +14,12 @@ function HomePage(){
 
     //戻るボタン
     const prev_item = () => {
-        set_current_item((n) => (n - 1 + item_count) % item_count); //説明できないけどこれすごい
+        set_current_item((n) => (n + 1) % item_count); //説明できないけどこれすごい
     };
 
     //次へボタン
     const next_item = () => {
-        set_current_item((n) => (n + 1) % item_count);
+        set_current_item((n) => (n - 1) + item_count % item_count);
     };
 
     return(
