@@ -20,6 +20,8 @@ function HomePage(){
     //次へボタン
     const next_item = () => {
         set_current_item((n) => (n - 1) + item_count % item_count);
+        console.log("なくした");
+        console.log("ばぐしゅうせい");
     };
 
     return(
