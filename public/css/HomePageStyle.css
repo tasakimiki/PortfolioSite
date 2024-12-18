@@ -44,11 +44,11 @@
     transform: translate3d(-0 , 0, 0);
 }
 
-item_4{
+.item_4{
     transform: translate3d(20% , 0, 0);
 }
 
-item_5{
+.item_5{
     transform: translate3d(40% , 0, 0);
 }
 
