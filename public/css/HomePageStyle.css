@@ -27,10 +27,38 @@
 }
 
 .slider_item{
+<<<<<<< HEAD
     width: 100%;
     transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
 }
 
+=======
+    font-size: 600px;
+    display: inline; /*隣接する要素と横並びに*/
+    transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
+}
+
+.item_1{
+    transform: translate3d(-40%, 0, 0);
+}
+
+.item_2{
+    transform: translate3d(-20%, 0, 0);
+}
+
+.item_3{
+    transform: translate3d(-0 , 0, 0);
+}
+
+.item_4{
+    transform: translate3d(20% , 0, 0);
+}
+
+.item_5{
+    transform: translate3d(40% , 0, 0);
+}
+
+>>>>>>> 4a1c52d916cb038842d5cccc7a8cb2db423743b9
 .slide_button {
     width: 50px;
     height: 50px;
