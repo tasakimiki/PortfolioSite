@@ -8,8 +8,10 @@ export const display_all = (genre) => {
             <div className = "image_gallery">
                 {images.map((image, index) => ( 
                     <div key={index} className = "image_container">
-                        <Link to = {`/portfolio/${genre}/details/${image.project_num}`}><img src = {image.path} alt = {image.project_num}/></Link>
-                        <p className = "zen-kaku-gothic-new-medium">{image.year} | {image.title} </p>
+                        <Link to = {`/portfolio/${genre}/details/${image.project_num}`}>
+                            <img src = {image.path} alt = {image.project_num}/>
+                            <p className = "zen-kaku-gothic-new-medium">{image.year} | {image.title} </p>
+                        </Link>
                     </div>
                 ))}
             </div>
