@@ -538,6 +538,30 @@
         "tools":"Procreate",
         "caption":"Live2D制作のために描いたイラストです。Live2Dは未だに完成していません。",
         "path":"/images/Illustrations/original_project46.PNG"
+    },
+    {
+        "title":"オリジナルイラスト",
+        "project_num": "Project47",
+        "genre":"オリジナル",
+        "genre_num":1,
+        "year": 2024,
+        "month":11,
+        "time":15,
+        "tools":"Procreate",
+        "caption":"ギザ歯メガネの男の子のイラストです。",
+        "path":"/images/Illustrations/original_project47.PNG"
+    },
+    {
+        "title":"クリスマスイラスト",
+        "project_num": "Project48",
+        "genre":"オリジナル",
+        "genre_num":1,
+        "year": 2024,
+        "month": 12,
+        "time": 8,
+        "tools":"Procreate",
+        "caption":"2024年のクリスマスに制作した女の子のイラストです。",
+        "path":"/images/Illustrations/original_project48.PNG"
     }
 
 ]

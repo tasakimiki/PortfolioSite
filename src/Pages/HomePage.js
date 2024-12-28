@@ -89,7 +89,6 @@ function HomePage(){
         <div className = "image_slider">
             <Swiper
              slidesPerView = {3} //一度に表示するスライドの数
-             spaceBetween = {200} //スライド間のスペース
              pagination={{
                 clickable: true, //何枚目のスライドか示す丸いやつ
              }}
