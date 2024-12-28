@@ -1,11 +1,11 @@
 .home_page{
     margin: 0 auto;
     background: white;
-    padding-top: 93px;
 }
 
 /*カルーセル*/
 .image_slider{
+    padding-top: 93px;
     display: flex;
     justify-content: center; /*水平中央*/
     align-items: center; /*垂直中央*/
@@ -19,27 +19,69 @@
     height: 70%; 
     display: flex;
     justify-content: center; /*水平中央*/
-    align-items: center; /*垂直中央*/
+    align-items: center ; /*垂直中央*/
     white-space: nowrap; /*要素が親要素の幅を超えた場合でも改行されない*/
     margin: auto; /*この要素を水平方向に中央揃え*/
-    overflow: hidden; /*要素が枠を超えたとき非表示にする*/
+    overflow: visible !important;
     background: rgb(255, 0, 119);
 }
 
-.slider_item{
-    width: 100%;
-    transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
+.swiper{
+    max-height: 100%;
 }
 
-.slide_button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    text-align:center; /*テキストの横方向の中央ぞろえ*/
-    line-height:50px; /*テキストの縦方向の中央ぞろえ*/
-    cursor: pointer; /*ホバー時にポインターを表示*/
-    outline: none; /*フォーカス時の枠線を消す*/
+.swiper-wrapper{
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    overflow: visible !important;
 }
+
+.swiper-slide{
+    overflow: hidden; /*要素が枠を超えたとき非表示にする*/
+    transition: .1s;
+}
+
+.slider_item{
+    max-height: 100%;
+    max-width: 100%; 
+    transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
+    object-fit: contain; /* 画像の縦横比を保ちながら、中央に収める */
+}
+
+.swiper-slide-next{
+    transform: scale(1.5) !important;
+    transition: .2s;
+}
+
+.swiper-button-prev{
+    margin-left: 25%;
+}
+
+.swiper-button-next{
+    margin-right: 25%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%; /* 完全な円形にする */
+    background-color: transparent; /* ボタンの背景色 */
+    border: 3.15px solid white;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 30px !important; /* 矢印のサイズを小さくする */
+    font-weight: bold; /* 矢印の太さを調整 */
+}
+
+.swiper-button-prev::after{
+    transform: translate(-2px, 0px); /*見かけ上の位置を変更*/
+}
+
+.swiper-button-next::after{
+    transform: translate(2px, 0px); /*見かけ上の位置を変更*/
+}
+
+:root {
+    --swiper-theme-color: white !important;
+  }
