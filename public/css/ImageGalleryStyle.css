@@ -16,6 +16,13 @@
     object-fit: cover;
     border-radius: 2.5%;
     margin-bottom: -10px;
+    transition: .1s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.image_gallery img:hover {
+    transform: scale(1.03); /*見かけ上の大きさを変える*/
+    transition: .2s;
 }
 
 .image_gallery p{
