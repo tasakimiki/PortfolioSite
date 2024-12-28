@@ -26,6 +26,35 @@
     background: rgb(255, 0, 119);
 }
 
+
+.swiper{
+    max-height: 100% !important;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    overflow: visible !important;
+}
+
+.swiper-slide{
+    height: 500px !important; /* 固定幅 */
+    overflow: hidden; /*要素が枠を超えたとき非表示にする*/
+    transition: .1s;
+}
+
+.slider_item{
+    max-height: 100% !important;
+    max-width: 100% !important; 
+    transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
+    object-fit: contain; /* 画像の縦横比を保ちながら、中央に収める */
+}
+
+.swiper-slide-next{
+    transform: scale(1.5) !important;
+    transition: .2s;
+}
+
 .swiper{
     max-height: 100%;
 }
