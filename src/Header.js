@@ -11,15 +11,14 @@ function Header(){
                     <span>Z</span>ASSOUYA
                 </Link>
                 <nav>
-                    {/*active判定する関数作った方が見た目すっきりするかも*/}
                     <ul className="header_menu flex anton">
-                        <li className = {`header_menu1${location.pathname.startsWith("/portfolio")? "_active":""}`}>
-                            <Link to={"/portfolio/all"}><span>P</span>ORTFOLIO</Link>
-                            <div className = {`triangle${location.pathname.startsWith("/portfolio")? " triangle1_active":""}`}></div>
+                        <li className = {`header_menu1${(location.pathname.startsWith("/home") || location.pathname === "/" )? "_active":""}`}>
+                            <Link to={"/home"}><span>H</span>OME&PROFILE</Link>
+                            <div className = {`triangle${(location.pathname.startsWith("/home") || location.pathname === "/" )? " triangle1_active":""}`}></div>
                         </li>
-                        <li className = {`header_menu2${location.pathname.startsWith("/profile")? "_active":""}`}>
-                            <Link to={"/profile"}><span>P</span>ROFILE</Link>
-                            <div className = {`triangle${location.pathname.startsWith("/profile")? " triangle2_active":""}`}></div>
+                        <li className = {`header_menu2${location.pathname.startsWith("/portfolio")? "_active":""}`}>
+                            <Link to={"/portfolio/all"}><span>P</span>ORTFOLIO</Link>
+                            <div className = {`triangle${location.pathname.startsWith("/portfolio")? " triangle2_active":""}`}></div>
                         </li>
                         <li className = {`header_menu3${location.pathname.startsWith("/contact")? "_active":""}`}>
                             <Link to={"/contact"}><span>C</span>ONTACT</Link>

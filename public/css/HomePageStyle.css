@@ -4,15 +4,15 @@
 }
 
 /*カルーセル*/
-.image_slider{
+.image_slider, .swiper{
     padding-top: 93px;
     display: flex;
     justify-content: center; /*水平中央*/
     align-items: center; /*垂直中央*/
     width:100%;
-    height:42em;
+    height:35em;
     overflow: hidden; /*要素が枠を超えたとき非表示にする*/
-    background:gray;
+    background:rgb(186, 186, 186);
 }
 
 .slider_item_container{
@@ -25,10 +25,6 @@
     overflow: visible !important;
 }
 
-.swiper{
-    max-height: 100%;
-}
-
 .swiper-wrapper{
     display: flex;
     align-items: center; /* 垂直方向に中央揃え */
@@ -36,26 +32,25 @@
 }
 
 .swiper-slide{
-    height: 400px !important;
-    width: 400px !important;
     display: flex !important;
     align-items: center !important; /* 垂直方向に中央揃え */
     justify-content: center !important; /*水平中央*/
-    overflow: hidden; /*要素が枠を超えたとき非表示にする*/
     transition: .1s;
 }
 
 .slider_item{
-    height: 60%;
-    width: 60%; 
+    height: 50%;
+    width: 50%; 
     transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
     object-fit: contain; /* 画像の縦横比を保ちながら、中央に収める */
 }
 
 .swiper-slide-next{
-    transform: scale(1.2) !important;
-    transition: .2s;
+    transform: scale(1.4) !important;
+    transition: .8s;
 }
+
+/*ボタン*/
 
 .swiper-button-prev{
     margin-left: 25%;

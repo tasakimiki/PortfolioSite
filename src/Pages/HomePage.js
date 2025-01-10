@@ -3,11 +3,13 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination'; // ページネーション用スタイル
 import 'swiper/css/navigation'; // ナビゲーション用スタイル
+import {Autoplay} from 'swiper/modules';
 import { Pagination, Navigation } from 'swiper/modules'; // Swiper モジュールのインポート
 import images from "./DisplayImages/Images/TextData/ImagesTextData.json";
 
 function HomePage(){
     let [slider_images, set_slider_images] = useState([...Array(5)].map(() => 0));
+    const space_between = window.innerWidth * 0.1;
 
     const add_images = () => {
         const new_slider_images = [...slider_images];
@@ -86,25 +88,39 @@ function HomePage(){
     }, []); //初期レンダリング時に1度だけ実行
 
     return(
-        <div className = "image_slider">
-            <Swiper
-             slidesPerView = {3} //一度に表示するスライドの数
-             pagination={{
-                clickable: true, //何枚目のスライドか示す丸いやつ
-             }}
-             navigation //左右に矢印のナビゲーションを追加
-             loop = {true}
-             modules = {[Pagination, Navigation]}
-             >
+        <div className = "home">
+            <div className = "image_slider">
+                <Swiper
+                slidesPerView = {3} //一度に表示するスライドの数
+                spaceBetween = {space_between} //スライド間のスペース
+                pagination={{
+                    clickable: true, //何枚目のスライドか示す丸いやつ
+                }}
+                navigation //左右に矢印のナビゲーションを追加
+                loop = {true}
+                
+                autoplay =  {{  
+                    delay :  2000, //自動でスライドするとき何秒止まるか
+                }}
+                speed = {800}
+            
+                modules = {[Pagination, Navigation, Autoplay]}
+                >
 
-                {slider_images.map((slider_image, index) => {
-                    return(
-                        <SwiperSlide key = {index}>
-                            <img className = "slider_item" src = {images[slider_image].path} alt = {`image${index}`} />
-                        </SwiperSlide>
-                    )
-                })}
-            </Swiper>
+                    {slider_images.map((slider_image, index) => {
+                        return(
+                            <SwiperSlide key = {index}>
+                                <img className = "slider_item" src = {images[slider_image].path} alt = {`image${index}`} />
+                            </SwiperSlide>
+                        )
+                    })}
+                </Swiper>
+            </div>
+
+            <div className = "proofile">
+                
+
+            </div>
         </div>
     );
 }

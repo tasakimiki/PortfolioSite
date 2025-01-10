@@ -18,7 +18,7 @@ function PortfolioPage(){
     return(
         <div className = "main">
             <div>
-                <h1 className = "title anton"  id = "title1">
+                <h1 className = "title anton"  id = "title2">
                     <span>P</span>ORTOFOLIO
                 </h1>
                 <h2 className = "sub_title zen-kaku-gothic-new-regular">
