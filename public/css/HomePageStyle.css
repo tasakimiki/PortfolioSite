@@ -39,14 +39,14 @@
 }
 
 .slider_item{
-    height: 50%;
-    width: 50%; 
+    height: 55%;
+    width: 55%; 
     transition: transform 1s ease; /*easeは最初はゆっくり、途中で早く、最後はまたゆっくりな動き*/
     object-fit: contain; /* 画像の縦横比を保ちながら、中央に収める */
 }
 
 .swiper-slide-next{
-    transform: scale(1.4) !important;
+    transform: scale(1.6) !important;
     transition: .8s;
 }
 
@@ -83,4 +83,46 @@
 
 :root {
     --swiper-theme-color: white !important;
-  }
+}
+
+/*プロフィール欄*/
+
+.profile{
+    margin: auto; /*この要素を水平方向に中央揃え*/
+    margin-top: 17em;
+    margin-bottom: 3em;
+    width: 70%;
+    height: 35em;
+    border-radius: 0.5em;
+    background-color: white;
+    border: 2.0px solid black; 
+}
+
+.profile_content{
+    margin: auto; /*この要素を水平方向に中央揃え*/
+    margin: 3em;
+    display: flex;
+}
+
+.profile_icon img{
+    margin-top: 0.8em;
+    width: 15em;
+    height: 15em;
+    object-fit: cover; /*画像の縦横比率変わったとき、縮めるんじゃなくて切り取る*/
+    border-radius: 50%;
+    border: 1.2px solid #cdcdcd; 
+}
+
+.profile_text{
+    margin-left: 3.5em;
+    letter-spacing: 8%;
+}
+
+.profile_text h1{
+    font-size: 29px;
+    margin-top: 0.4em;
+}
+
+.profile_text h1 span, .profile_text p, .profile_text h2{
+    font-size: 19px;
+}
