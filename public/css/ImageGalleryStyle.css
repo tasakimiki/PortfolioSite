@@ -1,16 +1,29 @@
-.image_gallery, .image_detail{
+.image_detail{
     display: flex;
     flex-wrap: wrap; /*flexコンテナのアイテムが1行に収まらない時折り返す*/
     justify-content: center;
     margin-top: 40px;
-    gap: 2em;
+    gap: 2em; /*要素間のスペース*/
 }
 
 .image_container {
     margin-bottom: 70px;
 }
 
-.image_gallery img {
+.image_gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image_gallery2 {
+    display: flex;
+    flex-wrap: wrap; /*flexコンテナのアイテムが1行に収まらない時折り返す*/
+    gap: 2em; /*要素間のスペース*/
+
+}
+
+.image_gallery2 img {
     width: 255px;
     height: 255px;
     object-fit: cover;
@@ -20,12 +33,12 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.image_gallery img:hover {
+.image_gallery2 img:hover {
     transform: scale(1.03); /*見かけ上の大きさを変える*/
     transition: .2s;
 }
 
-.image_gallery p{
+.image_gallery2 p{
     font-size: 16px;
     letter-spacing: 0.8px;
 }

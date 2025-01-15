@@ -96,9 +96,9 @@
 .profile{
     margin: auto; /*この要素を水平方向に中央揃え*/
     margin-top: 17em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
     width: 70%;
-    height: 35em;
+    height: 33em;
     border-radius: 0.5em;
     background-color: white;
     border: 2.0px solid black; 
@@ -131,4 +131,46 @@
 
 .profile_text h1 span, .profile_text p, .profile_text h2{
     font-size: 19px;
+}
+
+.sns_icons{
+    margin-top: -0.5em;
+    padding-left: 3em;
+    display: flex;
+    gap: 2em; /*要素間のスペース*/
+}
+
+.icons{
+    display: flex;
+    justify-content: center; /*水平中央*/
+    align-items: center; /*垂直中央*/
+    width: 60px;
+    height: 60px;
+    border: 2.3px solid black;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.icons img{
+    transition: .2s;
+}
+
+.x_icon{
+    width: 42px;
+    height: 40px; 
+}
+
+.insta_icon{
+    width: 50px;
+    height: 50px; 
+}
+
+.icons:hover{
+    background-color: black;
+    transition: .2s;
+}
+
+.icons:hover img{
+    filter: invert(100%); /*画像の色を反転*/
+    transition: .2s;
 }

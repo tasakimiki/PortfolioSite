@@ -4,8 +4,8 @@ import images from "./Images/TextData/ImagesTextData.json";
 export const display_all = (genre) => {
     
     return(
-        <div>
-            <div className = "image_gallery">
+        <div className = "image_gallery">
+            <div className = "image_gallery2">
                 {images.map((image, index) => ( 
                     <div key={index} className = "image_container">
                         <Link to = {`/portfolio/${genre}/details/${image.project_num}`}>
@@ -32,8 +32,8 @@ export const display_clientwork = (genre) => {
     }
 
     return (     
-        <div>
-            <div className = "image_gallery">
+        <div  className = "image_gallery">
+            <div className = "image_gallery2">
                 {images.map((image, index) => ( 
                     //↓左辺がtrueなら右辺を実行(表示)
                     check_genre_match(image.genre_num) && (
@@ -61,8 +61,8 @@ export const display_original = (genre) => {
     }
 
     return (     
-        <div>
-            <div className = "image_gallery">
+        <div className = "image_gallery">
+            <div className = "image_gallery2">
                 {images.map((image, index) => ( 
                     //↓左辺がtrueなら右辺を実行(表示)
                     check_genre_match(image.genre_num) && (

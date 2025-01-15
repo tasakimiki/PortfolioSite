@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {Link} from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/pagination'; // ページネーション用スタイル
 import 'swiper/css/navigation'; // ナビゲーション用スタイル
@@ -125,13 +126,24 @@ function HomePage(){
 
                     <div className = "profile_text">
                         <h1 className = "zen-kaku-gothic-new-bold">雑草屋<span className = "anton">/ZASSOUYA</span></h1>
+
                         <p className = "zen-kaku-gothic-new-medium">10月11日生まれ　千葉生まれ沖縄育ち　工業高専生<br/>SNS用アイコンやサムネイル、MVイラストをメインとした案件をお受けしています。<br/>
                             表情や手を描くのが好きなので顔周りが強調される構図が得意です。<br/>
                             最近はLive2dや3Dモデリングを勉強中です。</p>
+
                         <h2 className = "zen-kaku-gothic-new-bold">使用ソフト</h2>
                         <p className = "zen-kaku-gothic-new-medium">CLIP STUDIO PAINT, procreate, ibisPaintX</p>
+
                         <h2 className = "anton">SNS</h2>
-                        
+
+                        <div className = "sns_icons">
+                            <Link className = "icons" to = {"https://x.com/zassou_yasan"}>
+                                <img className = "x_icon" src = "/icons/x_icon.png" alt = "x_link"/>
+                            </Link>
+                            <Link className = "icons" to = {"https://www.instagram.com/zassou_yasan"}>
+                            <img className = "insta_icon" src = "/icons/instagram_icon.png" alt = "insta_link"/>
+                            </Link>  
+                        </div>                      
                     </div>
 
                 </div>
