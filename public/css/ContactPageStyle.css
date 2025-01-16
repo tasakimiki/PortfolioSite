@@ -1,0 +1,17 @@
+.contact_container{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center; /*水平中央*/
+}
+
+.contact_text{
+    letter-spacing: 8%;
+    text-align: center;
+}
+
+.contact_sns_icons{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center; /*水平中央*/
+    gap: 2em; /*要素間のスペース*/
+}

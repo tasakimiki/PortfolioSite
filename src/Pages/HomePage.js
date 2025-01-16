@@ -99,12 +99,12 @@ function HomePage(){
                 }}
                 navigation //左右に矢印のナビゲーションを追加
                 loop = {true}
-                
+                /*
                 autoplay =  {{  
                     delay :  2000, //自動でスライドするとき何秒止まるか
                 }}
                 speed = {800}
-            
+                */
                 modules = {[Pagination, Navigation, Autoplay]}
                 >
 
