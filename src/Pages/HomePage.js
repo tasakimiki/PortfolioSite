@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Link} from "react-router-dom";
 import 'swiper/css';
@@ -84,14 +84,42 @@ function HomePage(){
         set_slider_images(new_slider_images);
     };
 
+    const swiperRef = useRef(null);
+    const [backgroundImage, setBackgroundImage] = useState("");
+
     useEffect(() => {
         add_images();
     }, []); //初期レンダリング時に1度だけ実行
 
+    useEffect(() => {
+        if (swiperRef.current) {
+          const swiperInstance = swiperRef.current.swiper;
+    
+          // 初期背景設定
+          updateBackground(swiperInstance.slides[swiperInstance.activeIndex]);
+    
+          // スライド変更時に背景を更新
+          swiperInstance.on("slideChange", () => {
+            const currentSlide = swiperInstance.slides[swiperInstance.activeIndex + 1];
+            updateBackground(currentSlide);
+          });
+        }
+    }, []);
+
+    const updateBackground = (slide) => {
+        const img = slide.querySelector("img");
+        if (img) {
+          setBackgroundImage(img.src);
+        }
+    };
+
+    console.log(`背景画像のURL:${backgroundImage}`);
+
     return(
         <div className = "home">
-            <div className = "image_slider">
+            <div className = "image_slider" style={{ '--background-image': `url(${backgroundImage})`}}>
                 <Swiper
+                ref = {swiperRef}
                 slidesPerView = {3} //一度に表示するスライドの数
                 spaceBetween = {space_between} //スライド間のスペース
                 pagination={{
@@ -99,12 +127,12 @@ function HomePage(){
                 }}
                 navigation //左右に矢印のナビゲーションを追加
                 loop = {true}
-                /*
+                
                 autoplay =  {{  
                     delay :  2000, //自動でスライドするとき何秒止まるか
                 }}
                 speed = {800}
-                */
+                
                 modules = {[Pagination, Navigation, Autoplay]}
                 >
 

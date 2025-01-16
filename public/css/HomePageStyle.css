@@ -23,7 +23,7 @@
 
 .image_slider:before{
     content: "";
-    background-image: url("/images/Illustrations/original_project47.PNG");
+    background-image: var(--background-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,9 +93,7 @@
 .swiper-button-prev, .swiper-button-next {
     width: 50px !important;
     height: 50px !important;
-    border-radius: 50%; /* 完全な円形にする */
     background-color: transparent; /* ボタンの背景色 */
-    border: 3.15px solid white;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -104,11 +102,11 @@
 }
 
 .swiper-button-prev::after{
-    transform: translate(-2px, 0px); /*見かけ上の位置を変更*/
+    transform: translate(30px, 0px); /*見かけ上の位置を変更*/
 }
 
 .swiper-button-next::after{
-    transform: translate(2px, 0px); /*見かけ上の位置を変更*/
+    transform: translate(-30px, 0px); /*見かけ上の位置を変更*/
 }
 
 :root {
