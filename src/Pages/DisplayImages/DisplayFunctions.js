@@ -78,5 +78,5 @@ export const display_original = (genre) => {
 };
 
 export const display_other = () => {
-    return <div><h1>これはその他の画像</h1></div>;
+    return <div><h1></h1></div>;
 };
